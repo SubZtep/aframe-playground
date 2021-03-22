@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ascene</title>
+    <link rel="icon" href="witness.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/html" id="scene-src">
+      <pug file="./src/scene.pug" update="#scene" />
+    </script>
+    <pug file="./public/vendors.pug" />
+  </head>
+  <body>
+    <div id="scene"></div>
+    <script src="imports.ts"></script>
+  </body>
+</html>

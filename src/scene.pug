@@ -1,0 +1,42 @@
+//- renderer="alpha: false; colorManagement: true; antialias: false; powerPreference: \"high-performance\"; logarithmicDepthBuffer: false; physicallyCorrectLights: true; precision: low"
+a-scene(
+  renderer="alpha: false; colorManagement: true; antialias: false; logarithmicDepthBuffer: false; physicallyCorrectLights: true; precision: low"
+  loading-screen="dotsColor: #060; backgroundColor: #666"
+  shadow="type: pcfsoft"
+  vr-mode-ui="enabled: false"
+  )
+  //- background="color: #666"
+  //- a-sky
+  //- fog="type: 'exponential'; color: #666; near: 5.00; far: 10"
+  //- adat
+
+  //- look-controls
+  a-camera(
+    near="0.1"
+    far="100"
+    position="0 3 0"
+    rotation="-90 0 0"
+    wasd-controls-enabled="true"
+    look-controls-enabled="false"
+    wasd-controls="acceleration: 10"
+    )
+
+  include entities/box-table.pug
+  include entities/box-ring.pug
+
+  include entities/rgb.pug
+
+  //- a-box(rotate-mouse)
+  //- four-square(
+    width="8"
+    height="5"
+    depth="1"
+    position="0 0.1 0")
+  //-each i in [2, 3, 4, 5]
+    four-square(
+      material="metalness: 1; color: red"
+      width=i
+      height=i
+      depth="1"
+      position=`0 ${i} 0`
+      rotate-mouse)

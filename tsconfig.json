@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // "outDir": "./dist/",
+    // "lib": ["ESNext", "dom"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "Node",
+    // "isolatedModules": true,
+    // "downlevelIteration": true,
+    // "noImplicitThis": true,
+    // "allowSyntheticDefaultImports": true,
+    // "esModuleInterop": true,
+    // "allowSyntheticDefaultImports": true,
+    "strict": true,
+    // "allowUmdGlobalAccess": true,
+    // "resolveJsonModule": true,
+    "allowJs": true,
+    // "checkJs": true,
+    // "sourceMap": false,
+    "baseUrl": ".",
+    "types": ["vite/client"],
+    "typeRoots": [
+      "./src/types",
+      "node_modules/@types"
+    ],
+  },
+  "include": ["imports.ts", "src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

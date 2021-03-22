@@ -1,0 +1,8 @@
+a-entity
+  each x in [0, 1, 2, 3, 4, 5, 6, 7]
+    each y in [1, 2, 3, 4, 5, 6, 7, 8]
+      a-box(
+        material="metalness: 1; color: red; opacity: 0.5"
+        position=`${x*2-7} -10 ${y*2-8}`)
+
+include box-ring.pug
