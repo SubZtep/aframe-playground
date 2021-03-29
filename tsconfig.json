@@ -9,7 +9,6 @@
     // "isolatedModules": true,
     // "downlevelIteration": true,
     // "noImplicitThis": true,
-    // "allowSyntheticDefaultImports": true,
     // "esModuleInterop": true,
     // "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -19,7 +18,7 @@
     // "checkJs": true,
     // "sourceMap": false,
     "baseUrl": ".",
-    "types": ["vite/client"],
+    // "types": ["vite/client"],
     "typeRoots": [
       "./src/types",
       "node_modules/@types"
